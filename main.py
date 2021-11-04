@@ -59,8 +59,8 @@ def main():
             tile_txt = textwrap.wrap(tile_txt, width = 12)
             for lines in tile_txt:
                 w,h = draw.textsize(lines, font = font)
-                draw.text((((x + 175) - (w / 2)) , (y + 175) - ((h / 2) * len(tile_txt))  + y_text), lines, (0,0,0), font = font)
-                y_text += h + 2;
+                draw.text((((x + 175) - (w / 2)) , (y + 175) - ((50 / 2) * len(tile_txt))  + y_text), lines, (0,0,0), font = font)
+                y_text += 50 + 2;
 
     img.save('bingo_out.png')    
 
